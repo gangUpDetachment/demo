@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            display: block;
+            margin:100px auto 0;
+            width: 500px;
+        }
+        div{
+            width: 800px;
+            margin:100px auto 0;
+            height: 20px;
+            font-size: 30px;
+        }
+        a{
+            margin-left: 100px;
+            text-decoration: none;
+            display: block;
+            float: left;
+            background-color: gray;
+            color:#fff;
+            border-radius: 10px;
+            box-shadow: gray 2px 2px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./2934349b033b5bb5ca25442334d3d539b700bc78.png" alt="">
+    <div>
+        <a href="" style="background-color: #fff; color: black; box-shadow: none;">叫爸爸回到老李文档 </a>
+        <a href="./index2.html">爸爸</a>
+        <a href="##" id="aaa">不叫</a>
+    </div>
+
+    <script>
+        let aaa = document.getElementById("aaa");
+        aaa.onclick = function(){
+            aaa.innerHTML = "爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸爸！"
+            // aaa.href = "./index2.html"
+        }
+    </script>
+</body>
+</html>
