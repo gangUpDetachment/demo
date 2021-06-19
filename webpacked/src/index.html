@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <div id="con">
+     
+    </div>
+  </div>
+  <img src="./img/err.jpg" alt="">
+  <script>
+/*数据：data = [{ value: '1,2' }, { value: '3' }, { value: '4,5' }] 
+期望结果： 
+['1', '2', '3', '4', '5']*/
+data = [{ value: '1,2' }, { value: '3' }, { value: '4,5' }]
+
+console.log(JSON.stringify(data));
+
+ console.log(JSON.stringify(data).match(/\d/g));
+ const  newArr=[]
+   data.forEach((item,index)=>{
+     newArr.push(item.value)
+   })
+   console.log(newArr.join(",").split(","))
+ 
+  const re=data.map(item => item.value).join(",").split(",");
+   console.log(re);
+   const e=JSON.stringify(data).split("").filter(i=>i==+i);
+   console.log(e)
+
+
+const r =data.reduce((pre, cur) => pre.concat(cur.value.split(",")), [])
+console.log(r);
+  </script>
+
+</body>
+</html>
